@@ -27,7 +27,7 @@ class FRED:
 
         self.api_key = None
         if api_key is not None:
-            self.api
+            self.api_key = api_key
         elif api_key_file is not None:
             file = open(api_key_file, 'r')
             self.api_key = file.readline().strip()
